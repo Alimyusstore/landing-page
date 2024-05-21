@@ -1,0 +1,389 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eceaeafa;
+}
+.grid-container{
+    display: grid;
+    grid-template:  "header header" 2%
+                    "aside body" 90%
+                    "footer footer" 8% / 20% 80px;
+}
+.parent-container{
+    display: grid;
+    grid-template-columns: 800px;
+    padding: 30px 30px;
+   background-color: #f7f4f4;
+   width: 100%;
+}
+.parent-container> div{
+    box-shadow: 5px 2px 5px  2px rgba(144, 225, 248, 0.3);
+
+}
+.first-div-child{
+    background-color: hsla(0, 5%, 92%, 0.6);
+}
+#first-div-p{
+    text-align: right;
+    margin-bottom: 7px;
+    padding-right: 20%;
+}
+.second-div-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 90px;
+}
+
+.second-div-child div a {
+    text-decoration: none;
+    color: #000
+}
+
+.third-div-child{
+    background-image: url("images/computer\ background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-div-child p:first-of-type{
+ font-size: 40px;
+ margin-bottom: 0;
+ margin-top: 20%;
+}
+.third-div-child p:nth-of-type(2){
+ width: 350px;
+ font-size: 13px;
+ line-height: 1.9;
+ text-align: center;
+
+}
+
+
+.third-div-child button, .fivth-div-child button, .eight-div-child button, .tenth-div-child-child .sub-btn button, .eleventh-div-child div:nth-of-type(3) button, .twelve-div-child div button{
+ padding: 8px 10px;
+ border: 0;
+ border-radius: 3px;
+ margin-right: 15px;
+ cursor: pointer;
+ background-color: black;
+}
+.third-div-child button:first-of-type,  .fivth-div-child button, .eight-div-child button, .tenth-div-child-child .sub-btn button:first-of-type, .eleventh-div-child div:nth-of-type(3) button, .twelve-div-child div button{
+    background-color: #f5af45;
+}
+.third-div-child button:nth-of-type(2),  .tenth-div-child-child .sub-btn button:nth-of-type(2){
+    background-color: #23325d;
+}
+
+.third-div-child a, .eight-div-child a, .eleventh-div-child div:nth-of-type(3) a, .twelve-div-child div a{
+ text-decoration: none;
+ color: #fff;
+ text-transform: uppercase;
+ font-weight: 600;
+ font-size: 11px;
+}
+
+.fourth-div-child{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.fourth-div-child-child{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.fourth-div-child> p{
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+.fourth-div-child> img{
+    margin-bottom: 20px;
+}
+.fourth-div-child-child img{
+    margin-bottom: 10px;
+}
+.fourth-div-child-child span{
+ display: block;
+}
+.fourth-div-child-child p{
+ width: 180px;
+ font-size: 12px;
+ line-height: 1.8;
+}
+
+.fourth-div-child-child a, .sixth-div-child a, .ninth-div-child a, .thirdteen-div-child-child div > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f7bd67;
+    font-size: 11px;
+    font-weight: 600;
+    
+}
+
+.fivth-div-child, .seventh-div-child, .tenth-div-child{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    padding: 40px;
+}
+
+.fivth-div-child > p:first-of-type, .seventh-div-child > p:first-of-type, .eight-div-child > p:first-of-type, .tenth-div-child > p:first-of-type, .eleventh-div-child div:first-of-type p:first-of-type, .thirdteen-div-child > div:first-of-type p, .fourteen-div-child div:first-of-type  p:first-of-type{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.fivth-div-child> img, .seventh-div-child> img, .tenth-div-child > img, .eleventh-div-child div img:first-of-type, .thirdteen-div-child div:first-of-type img, .fourteen-div-child img:first-of-type{
+    margin-bottom: 20px;
+}
+.fivth-div-child .paragraph{
+    font-size: 14px;
+    line-height: 1.8;
+    width: 500px;
+}
+
+.fivth-div-child> div img{
+    vertical-align:middle
+}
+
+.fivth-div-child a, .tenth-div-child-child .sub-btn a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.sixth-div-child, .ninth-div-child, .tenth-div-child-child{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.sixth-div-child{
+    padding: 30px 40px;
+    background-color: #fff;
+
+}
+.sixth-div-child .sub-sixth, .ninth-div-child p:first-of-type{
+    margin: 8px;
+    font-size: 20px;
+}
+.sixth-div-child p:nth-of-type(2){
+    color:#f0ac46;
+}
+.sixth-div-child a{
+    display: block;
+    margin: 10px;
+ 
+}
+
+.sixth-div-child .parag, .ninth-div-child p:last-of-type {
+width: 350px;
+line-height: 1.5;
+font-size: 13px;
+text-align: left;
+}
+
+.seventh-div-child > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    align-items: flex-start;
+}
+
+.seventh-div-child > div div p{
+    text-align: center;
+}
+
+
+.eight-div-child {
+    background-image: url("images/techie.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.eight-div-child button {
+     display: block;
+}
+
+.eight-div-child p:nth-of-type(2){
+    font-size: 14px;
+    line-height: 1.8;
+    width: 550px;
+}
+
+.eight-div-child > p:first-of-type{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.ninth-div-child {
+    padding: 60px 100px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.ninth-div-child p:last-of-type {
+width: 260px;
+}
+.tenth-div-child{
+    background-color: #fff;
+}
+.tenth-div-child-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.tenth-div-child-child .sub-tenth{
+    border: 1px solid #c7c6c6;
+
+}
+
+.tenth-div-child-child .sub-tenth .sub-head{
+    background-color: #f5af45;
+    padding: 20px;
+    color: white;
+
+}
+.tenth-div-child-child .sub-tenth .sub-head2{
+    background-color: #194556;
+    padding: 20px;
+}
+
+.tenth-div-child-child .sub-tenth h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.tenth-div-child-child .sub-tenth h3 + p{
+    font-size: 13px;
+    width: 150px;
+    line-height: 1.9;
+    padding: 5px 25px;
+    color: #727272;
+}
+
+.tenth-div-child-child .sub-btn button{
+    margin-top: 20px;
+}
+
+.eleventh-div-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.eleventh-div-child div:nth-of-type(3) p{
+    font-size: 14px;
+    line-height: 1.7;
+    color: #585757;
+    width: 600px;
+}
+.twelve-div-child{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(197, 82%, 22%);
+    color: #fff;
+    padding: 40px 55px;
+}
+.twelve-div-child div p{
+    font-size: 23px;
+    width: 300px;
+    text-align: center;
+    
+}
+
+.thirdteen-div-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.thirdteen-div-child-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.thirdteen-div-child-child div > p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #585757;
+    width: 300px;
+}
+
+.thirdteen-div-child-child div>div{
+    display: flex;
+    justify-content: center;
+}
+.thirdteen-div-child-child div>div>div{
+    border: 1px solid #000;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: #828080;
+}
+
+.thirdteen-div-child-child div>div>div:first-of-type{
+    background-color: hsl(197, 82%, 22%);
+    color: #fff;
+    font-weight: 600;
+}
+
+.fourteen-div-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+}
+
+.fourteen-div-child div:last-child {
+    background-color: #c7c7c776;
+    padding: 15px 10px;
+    width: 500px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.fourteen-div-child div:last-child span:first-of-type{
+    color: #fda21a;
+}
+
+.fifteen-div-child{
+    background-color: #20566b;
+    text-align: center;
+    color: #fff;
+    padding: 50px 100px;
+}
+
+.fifteen-div-child div:first-of-type img{
+    padding: 10px;
+}
+
+.fifteen-div-child p {
+    font-size: 14px;
+    padding: 20px;
+}
