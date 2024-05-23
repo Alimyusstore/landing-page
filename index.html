@@ -3,75 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Template</title>
+    <title>body6</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>   
-        <div>
-        <a href="#">
-            <img src="logo.png" alt="beta">
-        </a>
-        <a href="#">my Template</a>
-        <a href="#">add Template</a>
-        </div>
-
-        <div>
-            <span>
-                <i class="icon-reload-CCW"></i>
-                Clear All Modules
-            </span>
-            <span>
-                <i class="fa fa-desktop"></i>
-                preview
-            </span>
-            <span>
+    <div class="grid-container">
+        <header>   
+            <div>
                 <a href="#">
-                    <img src="cart.png" alt="cart">
-                    <i class="fa fa-shopping-cart"></i>
-                    buy now
+                    <img src="images/logo.png" alt="beta">
                 </a>
-            </span>
-        </div>
-    </header>
+                <a href="#">my Template</a>
+                <a href="#">add Template</a>
+            </div>
+        
+            <div>
+                <div>
+                    <i class="icon-reload-CCW"></i>
+                    <P>Clear All Modules</P>
+                </div>
+                <div>
+                    <i class="fa fa-desktop"></i>
+                     <p>preview</p>
+                </div>
+                <div>
+                    <a href="#">
+                        <button>
+                            <img src="images/cart.png" alt="cart">
+                            <a href="#">buy now</a>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div>Template: marketing-agency</div>
+            <div>
+                <!-- <i class="fa fa-cubes"></i> -->
+                <input type="button" title="Module Thumbs" value="modules">
+                    
+                <!-- <i class="fa fa-paint-brush"></i> -->
+                <input type="button" title="Module Styles" value="styles">
+                    
+            </div>
+            <div>
+                <span>Apply To Module</span>
+                <input type="radio" name="module" id="current">
+                <label for="current" >Current</label>
+                <input type="radio" name="module" id="all">
+                <label for="all" >All</label>
+            </div>
 
-    <aside>
-        <div>Template: marketing-agency</div>
-        <div>
-            <button type="button" title="Module Thumbs">
-                <i class="fa fa-cubes"></i>
-                modules
-            </button>
-            <button type="button" title="Module Styles">
-                <i class="fa fa-paint-brush"></i>
-                styles
-            </button>
+            <div class="frame-body">
+                <iframe  src="aside.html" frameborder="0" title="aside html"></iframe>
+            </div>
+        </aside>
+        <div class="parent-containers">
+             <div>
+                <iframe class="first-frame" src="body.html" frameborder="0" title="body html"></iframe>
+            </div>
         </div>
-        <div>
-            <span>Apply To Module</span>
-            <input type="radio" name="module" id="current">
-            <label for="current" >Current</label>
-            <input type="radio" name="module" id="all">
-            <label for="all" >All</label>
-        </div>
+         <!-- <div class="parent-container">
+             <div class="first-div-child">
+                 <p id="first-div-p">View In Browser</p>
+             </div>
+             <div class="second-div-child">
+                 <div>
+                     <img src="images/150x50.png" alt="agency">
 
-        <div>
-            <fieldset>
+                 </div>
+                 <div>
+                     <a href="#">Home &nbsp;</a>
+                     |
+                     <a href="#">  &nbsp; Services &nbsp;</a>
+                     |
+                     <a href="#"> &nbsp; About</a>
+                 </div>
+             </div>
+             <div class="third-div-child">
+                 <p>Marketing Agency</p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod modi quidem, 
+                     magnam, numquam minus id, cumque.
+                 </p>
+                 <div>
+                     <button type="button">
+                         <a href="#">learn more</a>
+                     </button>
+                     <button type="button">
+                         <a href="#">get started</a>
+                     </button>
+                 </div>
+             </div>
+             <div class="fourth-div-child">
+                 <p>Our  Services</p>
+                 <img src="images/line1.png" alt="line1">
+                 <div class="fourth-div-child-child">
+                     <div>
+                         <img src="images/design.png" alt="design">
+                         <span>Designing</span>
+                         <p>Lorem ipsum dolor sit amet magnam adipisicing elit.</p>
+                         <a href="#">read more</a>
+                     </div>
+                     <div>
+                         <img src="images/designing.png" alt="Development">
+                         <span>Development</span>
+                         <p>Lorem ipsum dolor sit amet magnam adipisicing elit.</p>
+                         <a href="#">read more</a>
+                     </div>
+                     <div>
+                         <img src="images/support.png" alt="support">
+                         <span>Support</span>
+                         <p>Lorem ipsum dolor sit amet magnam adipisicing elit.</p>
+                         <a href="#">read more</a>
+                     </div>
+                 </div>
+             </div>
+              <div class="fivth-div-child">
+                     <p>Know More About Us</p>
+                     <img src="images/line1.png" alt="line2">
+                     <div>
+                          <img src="images/quest.png" alt="quest">
+                         <span>&nbsp;Who we Are?</span>
+                         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur error cumque ipsa perferendis odio autem, 
+                             dolore quam recusandae voluptatem quae in libero blanditiis, a nobis velit ipsam, provident non aut.
+                         </p>
+                     </div>
+                     <div>
+                          <img src="images/quest2.png" alt="quest2">
+                         <span>&nbsp;Why we Are?</span>
+                         <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur error cumque ipsa perferendis odio autem, 
+                             dolore quam recusandae voluptatem quae in libero blanditiis, a nobis velit ipsam, provident non aut.
+                         </p>
+                     </div>
+                     <button><a href="#">read more</a></button>
+             </div>
+             <div class="sixth-div-child">
+                 <div>
+                     <p class="sub-sixth">We are Creating</p>
+                     <p class="sub-sixth">Advanced Strategies</p>
+                     <p class="sub-sixth">For Your Business</p>
+                     <p class="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae deleniti nostrum, voluptatem officia repellat, expedita voluptate 
+                     <p class="parag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repudiandae deleniti nostrum, voluptatem officia repellat, expedita voluptate 
+                     <a href="#">read more</a>
+                 </div>
+                 <div><img src="images/2guys.jpg" alt="2 guys"></div>
+             </div>
+             <div class="seventh-div-child">
+                 <p>Our Skills And Qualities</p>
+                 <img src="images/line1.png" alt="line3">
+                 <div>
+                     <div><img src="images/girls.jpg" alt="4 people"></div>
+                     <div>
+                             <p>Designing</p>
+                             <p>Marketing</p>
+                             <p>Programing</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="eight-div-child">
+                 <p>Free Marketing Tools</p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptates. Modi, incidunt numquam tenetur quidem neque facere labore.</p>
+                 <button><a href="#">register</a></button>
+             </div>
+             <div class="ninth-div-child">
+                 <div>
+                     <p>Adsense seminar</p>
+                     <p>Lorem ipsum dolor sit amet quod modi quidem elit. Non, ipsam consequatur.</p>
+                     <a href="#">read more</a>
+                 </div>
+                 <div>
+                     <img src="images/expalin.jpg" alt="guy explain">
+                 </div>
+             </div>
+             <div class="eleventh-div-child">
+                 <div>
+                     <p>Customers All Over The World</p>
+                     <img src="images/line1.png" alt="line5">
+                 </div>
+                 <div>
+                     <img src="images/cloud2.jpg" alt="city">
+                 </div>
+                 <div>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur at impedit omnis saepe quis sapiente a quibusdam nemo doloribus! Nemo, quos consequatur sed perferendis vero magnam sapiente amet nobis aperiam?
+                     Distinctio, nostrum iusto veniam aperiam</p>
+                     <button><a href="#">read more</a></button>
+                 </div>
+             </div>
+             <div class="tenth-div-child">
+                 <p>Our Pricing</p>
+                 <img src="images/line1.png" alt="line4">
 
-            </fieldset>
-        </div>
-    </aside>
+                 <div class="tenth-div-child-child">
+                     <div>
+                         <div class="sub-tenth">
+                             <div class="sub-head">Standard</div>
+                             <h3>$19</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                         <div class="sub-btn">
+                             <button><a href="#">buy now</a></button>
+                         </div>
+                     </div>
 
-    <footer>
-        <a href="#">lifetime membership</a>
-        <a href="#">premium templates</a>
-        <a href="#">$5 store</a>
-        <a href="#">countdown timer</a>
-        <a href="#">help documents</a>
-        <a href="#">feedback</a>
-        <p> &copy; All Rights Reserved by Pennyblack Templates</p>
-    </footer>
+                     <div>
+                         <div class="sub-tenth">
+                             <div class="sub-head sub-head2">Premium</div>
+                             <h3>$49</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                         <div class="sub-btn">
+                             <button><a href="#">buy now</a></button>
+                         </div>
+                     </div>
+
+                     <div>
+                         <div class="sub-tenth">
+                              <div class="sub-head">Business</div>
+                             <h3>$99</h3>
+                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         </div>
+                         <div class="sub-btn">
+                             <button><a href="#">buy now</a></button>
+                         </div>
+                     </div>  
+                 </div>
+             </div>
+             <div class="twelve-div-child">
+                 <div>
+                     <p>One Month Trial Version Available</p>
+                 </div>
+                 <div>
+                     <button><a href="#">download now</a></button>
+                 </div>
+             </div>
+             <div class="thirdteen-div-child">
+                 <div>
+                     <p>Our Lastest News</p>
+                     <img src="images/line1.png" alt="line6">
+                 </div>
+                 <div class="thirdteen-div-child-child">
+                     <div>
+                         <div>
+                             <div>20 Jan</div>
+                             <div>Author Name</div>
+                         </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas corrupti accusamus ducimus voluptas molestiae commodi sunt adipisci obcaecati reprehenderit possimus quos, facere debitis.</p>
+                         <a href="#">read more</a>
+                     </div>
+                     <div><img src="images/boy.jpg" alt="boy"></div>
+                     <div><img src="images/girl.jpg" alt="girl"></div>
+                     <div>
+                         <div>
+                             <div>22 Jan</div>
+                             <div>Author Name</div>
+                         </div>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas corrupti accusamus ducimus voluptas molestiae commodi sunt adipisci obcaecati reprehenderit possimus quos, facere debitis.</p>
+                         <a href="#">read more</a>    
+                     </div>
+                 </div>
+             </div>
+             <div class="fourteen-div-child">
+                 <div>
+                     <p>What Our Client Say</p>
+                     <img src="images/line1.png" alt="line7">
+                 </div>
+                 <img src="images/profile.png" alt="profile pics">
+                 <div>
+                     <q><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora labore unde accusamus excepturi dicta assumenda tenetur  voluptatum. Accusamus!</i></q>
+                     <p><span>Jemina,</span> Manager</p>
+                 </div>   
+             </div>
+             <div class="fifteen-div-child">
+                 <div>
+                     <img src="images/facebookIcon.png" alt="FB">
+                     <img src="images/googleIcon.png" alt="google">
+                     <img src="images/twitter icon.png" alt="twitter">
+                     <img src="images/linkedInIcon.png" alt="linkedInIcon">
+                 </div>
+                 <hr>
+                 <p>77 Belgium Hollow Rd, First Street, Los Angeles, ZZ-96105</p>
+                 <hr>
+                 <p> &copy; All Rights Reserved | Unsubscribe</p>
+             </div>
+
+         </div> -->
+         <footer>
+            <div>
+                <div>
+                    <a href="#">lifetime membership</a>
+                    <a href="#">premium templates</a>
+                    <a href="#">$5 store</a>
+                    <a href="#">countdown timer</a>
+                    <a href="#">help documents</a>
+                    <a href="#">feedback</a>
+    
+                </div>
+            </div>
+             <p> &copy; All Rights Reserved by Pennyblack Templates</p>
+         </footer>
+    </div>
+
+    
     <script src="index.js"></script>
 </body>
 </html>
