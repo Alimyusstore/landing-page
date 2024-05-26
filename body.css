@@ -1,157 +1,31 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #eceaeafa;
-    margin: 0;
-    padding: 0;
-    /* overflow-x: hidden; */
-    width: 100vw
-}
-.helper{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 30px;
-}
-.grid-container{
+ @media screen and (max-width: 600px) {
+    .grid-container{
     width: 100vw;
-    /* height: 100vh; */
+     height: 100vh; 
     display: grid;
     grid-template:  "header header" 5%
                     "aside body" 80%
                     "footer footer" 15% / 25% 75%;
-    /* overflow: hidden ; */
+     overflow: hidden ; 
 }
-header{
-  
-    grid-area: header;
-    display: flex;
-    background-color: #edebeb;
-    align-items: center;
-    justify-content: space-between;
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eceaeafa;
 }
-
-header a {
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    vertical-align: middle;
-    color: #fff;
-    font-size: 0.7rem;
-
-
-}
-header > div:first-of-type{
-    background-color: #313b57;
-    align-items: center;
-    font-size: 14px;
-    width: 25%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 7px ;
-}
-header > div:nth-of-type(2){
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 70%;
-}
-
-header > div:nth-of-type(2) div{
-    padding: 10px;
-    text-transform: uppercase;
-    font-size: 12px;
-    display: flex;
-}
-
-header > div:nth-of-type(2) button{
-    background-color: #ea570d;
-    border: none;
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-}
-aside{
-    grid-area: aside;
-    background-color: #23325d;
-}
-aside div:first-of-type, aside> div:nth-of-type(3){
-    padding: 15px;
-    color: #fff;
-    margin: 0
-}
-aside> div:nth-of-type(3){
-    background-color: #3e3e41;
-}
-aside> div:nth-of-type(3) span{
-    font-weight: 600;
-    font-size: 12px;
-}
- aside>div:nth-of-type(3) label{
-    font-size: 14px;
- }
-aside div:first-of-type, aside div:nth-of-type(2) {
-    background-color: #031121;
-    color: rgb(189, 185, 185);
-    text-transform: uppercase;
-    font-size: 13px;
-    text-align: center;
-}
-aside div:nth-of-type(2) {
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
-aside div:nth-of-type(2) input{
-    background-color: #2a2c2e;
-    padding: 10px;
-    font-size: 11px;
-    text-transform: uppercase;
-    color: white;
-    border: none
-}
-aside div:nth-of-type(2) input:first-of-type{
-    background-color: #313b57;
-
-}
-
-footer{
-    grid-area: footer;
-    background-color: #030303;
-    color: white;
-    text-align: center;
-    padding: 30px;  
-    position: sticky;
-}
-footer> div{
+.helper{
     display: grid;
-    width: 100%;
-    justify-items: center;
-}
-footer div div{
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    row-gap: 10px;
-    margin-bottom: 40px;
-}
-footer a, footer p{
-      text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      font-size: 12px;
-}
-.parent-containers{
-    grid-area: body;
+    align-items:end;
+    justify-content: start;
 }
 .parent-container{
     display: grid;
     grid-template-columns: 100%;
      background-color: #f7f4f4;
-     max-width: 100%;
 }
 .parent-container> div{
     box-shadow: 5px 2px 5px  2px rgba(144, 225, 248, 0.3);
-
+    display: flex;
+    flex-direction: column;
 }
 .first-div-child{
     background-color: hsla(0, 5%, 92%, 0.6);
@@ -177,8 +51,9 @@ footer a, footer p{
 .third-div-child{
     background-image: url("images/computer\ background.jpg");
     background-position: top;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 450px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,12 +61,12 @@ footer a, footer p{
 }
 
 .third-div-child p:first-of-type{
- font-size: 40px;
+ font-size: 25px;
  margin-bottom: 0;
  margin-top: 20%;
 }
 .third-div-child p:nth-of-type(2){
- width: 350px;
+ width: 200px;
  font-size: 13px;
  line-height: 1.9;
  text-align: center;
@@ -232,7 +107,7 @@ footer a, footer p{
 
 .fourth-div-child-child{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     text-align: center;
 }
 .fourth-div-child> p{
@@ -268,6 +143,7 @@ footer a, footer p{
     flex-direction: column;
     align-items:  center;
     padding: 40px;
+    text-align: center;
 }
 
 .fivth-div-child > p:first-of-type, .seventh-div-child > p:first-of-type, .eight-div-child > p:first-of-type, .tenth-div-child > p:first-of-type, .eleventh-div-child div:first-of-type p:first-of-type, .thirdteen-div-child > div:first-of-type p, .fourteen-div-child div:first-of-type  p:first-of-type{
@@ -281,7 +157,7 @@ footer a, footer p{
 .fivth-div-child .paragraph{
     font-size: 14px;
     line-height: 1.8;
-    width: 500px;
+    width: 280px;
 }
 
 .fivth-div-child> div img{
@@ -298,13 +174,13 @@ footer a, footer p{
 
 .sixth-div-child, .ninth-div-child, .tenth-div-child-child{
     display: flex;
-    text-align: center;
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 .sixth-div-child{
     padding: 30px 40px;
     background-color: #fff;
-
+    text-align: center;
 }
 .sixth-div-child .sub-sixth, .ninth-div-child p:first-of-type{
     margin: 8px;
@@ -316,22 +192,19 @@ footer a, footer p{
 .sixth-div-child a{
     display: block;
     margin: 10px;
- 
 }
 
 .sixth-div-child .parag, .ninth-div-child p:last-of-type {
-width: 350px;
-line-height: 1.5;
+width: 280px;
+line-height: 1.7;
 font-size: 13px;
-text-align: left;
 }
 
 .seventh-div-child > div{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     width: 60%;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .seventh-div-child > div div p{
@@ -343,7 +216,8 @@ text-align: left;
     background-image: url("images/techie.jpg");
     background-position: top;
     background-repeat: no-repeat;
-    height: 400px;
+    background-size: cover;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -357,32 +231,36 @@ text-align: left;
 }
 
 .eight-div-child p:nth-of-type(2){
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.8;
-    width: 550px;
+    width: 280px;
 }
 
 .eight-div-child > p:first-of-type{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 0;
 }
 
 .ninth-div-child {
     padding: 60px 100px;
-    justify-content: space-around;
+   flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
-
+.ninth-div-child img {
+    width: 270px;
+    height: auto;
+}
 .ninth-div-child p:last-of-type {
 width: 260px;
 }
 .tenth-div-child{
     background-color: #fff;
 }
+
 .tenth-div-child-child{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
     gap: 10px;
 }
 .tenth-div-child-child .sub-tenth{
@@ -425,12 +303,16 @@ width: 260px;
     text-align: center;
     padding: 40px;
 }
+.eleventh-div-child div:nth-of-type(2) img{
+    width: 270px;
+    height: auto;
+}
 
 .eleventh-div-child div:nth-of-type(3) p{
     font-size: 14px;
     line-height: 1.7;
     color: #585757;
-    width: 600px;
+    width: 280px;
 }
 .twelve-div-child{
     display: flex;
@@ -457,7 +339,7 @@ width: 260px;
 
 .thirdteen-div-child-child{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -497,7 +379,7 @@ width: 260px;
 .fourteen-div-child div:last-child {
     background-color: #c7c7c776;
     padding: 15px 10px;
-    width: 500px;
+    width: 250px;
     line-height: 1.7;
     font-size: 14px;
 }
@@ -510,7 +392,6 @@ width: 260px;
     background-color: #20566b;
     text-align: center;
     color: #fff;
-    padding: 50px 100px;
 }
 
 .fifteen-div-child div:first-of-type img{
@@ -518,132 +399,7 @@ width: 260px;
 }
 
 .fifteen-div-child p {
-    font-size: 14px;
-    padding: 20px;
+    font-size: 12px;
 }
 
-iframe{
-width: 100%;
-height: 135vh;
-}
-
-
- @media screen and (max-width: 700px) {
- header a  {
-    font-size: 8px;
- }
-
- /* iframe {
-    width: 50%;
-    height: 135vh;
-   }
-    header{
-    grid-area: header;
-    display: flex;
-    background-color: #edebeb;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a {
-    font-size: smaller;
-}
-header > div:first-of-type{
-    background-color: #313b57;
-    align-items: center;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-header > div:nth-of-type(2){
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    width: 70%;
-}
-
-header > div:nth-of-type(2) div{
-    padding: 8px;
-    text-transform: uppercase;
-    font-size: 8px;
-    display: flex;
-}
-
-header > div:nth-of-type(2) button{
-    background-color: #ea570d;
-    border: none;
-    color: #fff;
-    padding: 4px 10px;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-}
-aside{
-    grid-area: aside;
-    background-color: #23325d;
-}
-aside div:first-of-type, aside> div:nth-of-type(3){
-    padding: 10px;
-    color: #fff;
-    margin: 0
-}
-aside> div:nth-of-type(3){
-    background-color: #3e3e41;
-}
-aside> div:nth-of-type(3) span{
-    font-weight: 600;
-    font-size: 10px;
-}
- aside>div:nth-of-type(3) label{
-    font-size: 10px;
- }
-aside div:first-of-type, aside div:nth-of-type(2) {
-    background-color: #031121;
-    color: rgb(189, 185, 185);
-    text-transform: uppercase;
-    font-size: 10px;
-    text-align: center;
-}
-aside div:nth-of-type(2) {
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
-aside div:nth-of-type(2) input{
-    background-color: #2a2c2e;
-    padding: 10px;
-    font-size: 8px;
-    text-transform: uppercase;
-    color: white;
-    border: none
-}
-aside div:nth-of-type(2) input:first-of-type{
-    background-color: #313b57;
-}
-
-footer{
-    grid-area: footer;
-    background-color: #030303;
-    color: white;
-    text-align: center;
-    padding: 20px;  
-    position: sticky;
-}
-footer> div{
-    display: grid;
-    width: 100%;
-    justify-items: center;
-}
-footer div div{
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    row-gap: 10px;
-    margin-bottom: 40px;
-}
-footer a, footer p{
-      text-decoration: none;
-      color: white;
-      text-transform: uppercase;
-      font-size: 10px;
-} */
- }
+} 
